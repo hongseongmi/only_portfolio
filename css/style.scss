@@ -344,6 +344,97 @@ top: 50%;
     display: none;
 
 }
+//sec-ik
+.ik .container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.ik .swiper-pagination{
+    opacity: 0;
+}
+.sec-ik-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $textColor;
+    margin: 50px 0;
+    
+    .box-web-ik{
+        font-size: 3.5rem;
+        text-shadow:  $textShadow;
+        color: $textColor;
+    }
+}
+.sec-ik-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .swiper.mySwiper{
+    width: 420px;
+    height: 526px;
+    border-top-left-radius: 250px;
+    border-top-right-radius: 250px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    }
+}
+.ik-bottom-text-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .box{
+        padding-bottom: 20px;
+        font-size: 1.1rem;
+        
+        p{
+            color: $textColor;
+            text-shadow: $textShadow;
+        }
+        span{
+            font-family: $pretendard;
+            font-weight: 600;
+        }
+    }
+    .bottom-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .btn-txt{
+            color: $textColor;
+            text-shadow: $textShadow;
+            border-bottom: 2px solid #fff;
+            margin-right: 20px;
+            padding-bottom: 5px;
+            transition: .3s;
+            
+            &:hover{
+                color: #525252;
+                border-bottom: 2px solid #525252;
+                padding-bottom: 10px;
+                text-shadow: none;
+            }
+        }
+    }
+}
+.sec-ik-bottom-top{
+    margin-right: 100px;
+}
+.sec-ik-bottom-bottom{
+    width: 600px;
+    height: 300px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 3px 7px 20px rgba(109, 109, 109, 0.2);
+    padding: 30px;
+}
 // sec-3
 .sec-3 .container{
     display: flex;
@@ -353,7 +444,6 @@ top: 50%;
 
 .sec-3-left{
     display: flex;
-    // padding-bottom: 150px;
 
 .sec-3-left-top{
     width: 350px;
@@ -408,7 +498,6 @@ top: 50%;
         padding-top: 20px;
         display: flex;
         .btn-txt{
-            width: 110px;
             text-align: center;
             color: $textColor;
             text-shadow: $textShadow;
@@ -442,6 +531,7 @@ top: 50%;
 
    
     .box-web-3ce{
+        width: 600px;
         text-shadow: $textShadow;
         font-size: 4.375rem;
     }
@@ -468,7 +558,6 @@ top: 50%;
         padding-top: 20px;
         display: flex;
         .btn-txt{
-            width: 110px;
             text-align: center;
             margin-right: 20px;
             border-bottom: 2px solid #fff;
@@ -580,7 +669,7 @@ top: 50%;
             text-shadow: $textShadow;
             margin: 0 auto;
            
-            .btn-txt{  width: 100px;
+            .btn-txt{  
                 text-align: center;
                 border-bottom: 2px solid #fff;
                 padding-bottom: 5px;
@@ -873,7 +962,13 @@ top: 50%;
     .sec-2-right .right-bottom-education {
         margin-right: 0px;
     }
+    // sec-ik
 
+    .sec-ik-bottom .swiper.mySwiper {
+        width: 330px;
+        height: 420px;
+
+    }
     // sec-3
     .sec-3 .container .sec-3-left .sec-3-left-top {
         width: 250px;
@@ -1098,6 +1193,26 @@ top: 50%;
     .right-sub-bottom > div.active{
         display: block;
     }
+    //sec-ik
+
+    .sec-ik-bottom .swiper.mySwiper {
+        width: 300px;
+        height: 360px;
+    }
+
+    .ik-bottom-text-wrap .box p {
+        color: #fff;
+        font-size: 1rem;
+        text-shadow: -1px 1px 3px rgba(157, 157, 157, 0.8666666667);
+    }
+    .sec-ik-bottom-bottom {
+        width: 530px;
+    }
+    .sec-ik-top .box-web-ik {
+        font-size: 3.2rem;
+        text-shadow: -1px 1px 3px rgba(157, 157, 157, 0.8666666667);
+        color: #fff;
+    }
 
     // sec-3
     .sec-3 .container .sec-3-left {
@@ -1240,6 +1355,35 @@ top: 50%;
         font-size: 1.05rem;
         font-weight: 600;
     }
+
+    // sec-ik
+
+    .sec-ik-top .box-web-ik {
+        font-size: 2.2rem;
+        text-shadow: -1px 1px 3px rgba(157, 157, 157, 0.8666666667);
+        color: #fff;
+    }
+
+    .sec-ik-bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .sec-ik-bottom-top {
+     margin-right: 0px;
+    }
+
+    .sec-ik-bottom .swiper.mySwiper {
+        width: 520px;
+        height: 300px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-radius: 30px;
+        margin-top: 0;
+    }
+    
+
     //sec-3
     .sec-3 .container {
         display: flex;
@@ -1448,6 +1592,24 @@ top: 50%;
         font-size: 1rem;
     }
 
+    // sec-ik
+    
+    .sec-ik-top .box-web-ik {
+        font-size: 1.8rem;
+        text-shadow: -1px 1px 3px rgba(157, 157, 157, 0.8666666667);
+        color: #fff;
+    }
+
+    .ik-bottom-text-wrap .box p {
+        color: #fff;
+        font-size: 0.9rem;
+        text-shadow: -1px 1px 3px rgba(157, 157, 157, 0.8666666667);
+    }
+    .sec-ik-bottom-bottom{
+        .btn-txt{
+            pointer-events: none;
+        }
+    }
     // sec-3
     .sec-3 .container{
         justify-content: space-evenly;
@@ -1457,9 +1619,7 @@ top: 50%;
         margin-top: -15%;
         width: 480px;
     }
-    .sec-3 .right-btn .btn-txt{
-        width: 100px;
-    }
+
 
     .sec-3 .container .sec-3-left .sec-3-left-top {
         width: 470px;
@@ -1484,15 +1644,18 @@ top: 50%;
             }
         }
     }
+    .sec-3 .container .sec-3-left .sec-3-left-top img {
+        border-radius: 30px;
+    }
     // sec-4
     .sec-4 .container .sec-4-left .sec-4-left-top .box-web-3ce {
         font-size: 2rem;
     }
     .sec-4 .container .sec-4-left .sec-4-left-bottom {
         width: 480px;
+        margin: 0 auto;
     }
     .sec-4 .container .sec-4-left .sec-4-left-btn .btn-txt {
-        width: 100px;
         pointer-events: none;
     }
 
@@ -1613,6 +1776,17 @@ top: 50%;
     .skills-box-wrap .skills-box .img-box {
         width: 40px;
     }
+
+    // sec-ik
+    .sec-ik-bottom .swiper.mySwiper {
+        width: 420px;
+        height: 240px;
+    }
+    .sec-ik-bottom-bottom {
+        width: 410px;
+        text-align: center;
+    }
+
     // sec-3
     .sec-3 .container .sec-3-left .sec-3-left-top {
         width: 420px;
@@ -1722,9 +1896,7 @@ top: 50%;
         padding-top: 30px;
         
     }
-    .left-btn a .btn-txt{
-        width: 90px;
-    }
+
     // sec-2
     .sec-2-left .left-mimoji {
         width: 170px;
@@ -1789,7 +1961,34 @@ top: 50%;
             font-weight: normal;
         }
     }
-
+    // sec-ik
+    .sec-ik-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #fff;
+        margin: 30px 0;
+    }
+    .sec-ik-top .box-web-ik {
+        font-size: 1.4rem;
+        text-shadow: -1px 1px 3px rgba(157, 157, 157, 0.8666666667);
+        color: #fff;
+    }
+    .sec-ik-bottom .swiper.mySwiper {
+        width: 310px;
+        height: 170px;
+        margin-bottom: 20px;
+    }
+    .sec-ik-bottom-bottom {
+        width: 330px;
+        text-align: center;
+    }
+    .bottom-btn{
+        .btn-txt{
+            font-size: 0.8rem;
+        }
+    }
     // sec-3
     .sec-3 .container{
         padding: 15% 0;
@@ -1816,9 +2015,7 @@ top: 50%;
         font-size: 0.8rem;
         padding-top: 10px;
     }
-    .sec-3 .right-btn .btn-txt {
-        width: 90px;
-    }
+
 
     // sec-4
 
@@ -1849,9 +2046,7 @@ top: 50%;
     .sec-4 .container .sec-4-left .sec-4-left-bottom .sec-4-left-btn {
         font-size: 0.8rem;
     }
-    .sec-4 .container .sec-4-left .sec-4-left-btn .btn-txt {
-        width: 90px;
-    }
+
 
     // sec-5
     .sec-5 .container{
@@ -1873,10 +2068,7 @@ top: 50%;
         font-size: 0.8rem;
         padding-top: 0;
     }
-    .sec-5 .container .sec-5-right .right-btn .btn-txt {
-        width: 90px;
 
-    }
     // sec-6
 
     .sec-6 .container .email-bg {

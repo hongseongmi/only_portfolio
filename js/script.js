@@ -29,6 +29,7 @@ new fullpage('#wrap', {
         const banner = $('.banner').offset().top;
         const sec1 = $('.sec-1').offset().top;
         const sec2 = $('.sec-2').offset().top;
+        const ik = $('.ik').offset().top;
         const sec3 = $('.sec-3').offset().top;
         const sec4 = $('.sec-4').offset().top;
         const sec5 = $('.sec-5').offset().top;
@@ -55,7 +56,7 @@ new fullpage('#wrap', {
         });
         $('.menu-web').click(function(){
             $('html,body').stop().animate({
-                scrollTop:sec3
+                scrollTop:ik
             });
         });
         $('.menu5').click(function(){
@@ -102,6 +103,26 @@ new fullpage('#wrap', {
 
     });
 
+    // section ik 스와이퍼
+    var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          loop:true,
+        //   loopedSlides: 1
+        // loopAdditionalSlides : 1,
+        },
+        effect:'fade',
+        autoplay:{
+            delay:3000,
+            disableOnInteraction:false,
+        },
+        // breakpoint : {
+
+        // }
+      });
+      
     // 햄버거 버튼 생성
     $('#hamburger').click(function(){
         $('#hamburger span').toggleClass('active');
